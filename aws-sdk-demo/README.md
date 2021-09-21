@@ -1,5 +1,7 @@
-# aws-api-demo
-Simple look at the aws api and how credentials, region and ec2 instances work
+# aws-sdk-demo credentials region and ec2 instance
+Simple look at the aws sdk and how credentials, region and ec2 instances work.
+- creds come from ~/.aws/credentials and if not found the ec2 metadata location is examined and roles for instance used
+- region come from ~/.aws/config and if not found from ec2 metadata
 
 ## install boto3
 [Quickstart](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#installation)

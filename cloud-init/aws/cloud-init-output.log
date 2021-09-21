@@ -1,0 +1,251 @@
+Cloud-init v. 19.3-44.amzn2 running 'init-local' at Tue, 21 Sep 2021 16:05:55 +0000. Up 6.42 seconds.
+Cloud-init v. 19.3-44.amzn2 running 'init' at Tue, 21 Sep 2021 16:05:56 +0000. Up 7.40 seconds.
+ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: |  eth0  | True |        172.31.25.80        | 255.255.240.0 | global | 02:ab:b6:2f:a5:51 |
+ci-info: |  eth0  | True | fe80::ab:b6ff:fe2f:a551/64 |       .       |  link  | 02:ab:b6:2f:a5:51 |
+ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++++
+ci-info: +-------+-----------------+-------------+-----------------+-----------+-------+
+ci-info: | Route |   Destination   |   Gateway   |     Genmask     | Interface | Flags |
+ci-info: +-------+-----------------+-------------+-----------------+-----------+-------+
+ci-info: |   0   |     0.0.0.0     | 172.31.16.1 |     0.0.0.0     |    eth0   |   UG  |
+ci-info: |   1   | 169.254.169.254 |   0.0.0.0   | 255.255.255.255 |    eth0   |   UH  |
+ci-info: |   2   |   172.31.16.0   |   0.0.0.0   |  255.255.240.0  |    eth0   |   U   |
+ci-info: +-------+-----------------+-------------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   9   |  fe80::/64  |    ::   |    eth0   |   U   |
+ci-info: |   11  |    local    |    ::   |    eth0   |   U   |
+ci-info: |   12  |   ff00::/8  |    ::   |    eth0   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+Cloud-init v. 19.3-44.amzn2 running 'modules:config' at Tue, 21 Sep 2021 16:05:58 +0000. Up 8.84 seconds.
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+ --> glibc-common-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> glibc-common-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-pc-modules-2.06-2.amzn2.0.3.noarch from installed removed (updateinfo)
+ --> systemd-sysv-219-78.amzn2.0.15.x86_64 from amzn2-core removed (updateinfo)
+ --> libcrypt-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-event-libs-1.02.170-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-tools-efi-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-libs-1.02.146-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+ --> curl-7.76.1-4.amzn2.0.1.x86_64 from installed removed (updateinfo)
+ --> libmount-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> systemd-219-78.amzn2.0.15.x86_64 from amzn2-core removed (updateinfo)
+ --> openldap-2.4.44-23.amzn2.0.1.x86_64 from installed removed (updateinfo)
+ --> glibc-all-langpacks-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-common-2.06-2.amzn2.0.6.noarch from amzn2-core removed (updateinfo)
+ --> systemd-libs-219-78.amzn2.0.15.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:lvm2-2.02.187-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> glibc-locale-source-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> libfdisk-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> libcrypt-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-tools-minimal-2.06-2.amzn2.0.3.x86_64 from installed removed (updateinfo)
+ --> libblkid-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> glibc-minimal-langpack-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-common-2.06-2.amzn2.0.3.noarch from installed removed (updateinfo)
+ --> glibc-locale-source-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> glibc-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.3.x86_64 from installed removed (updateinfo)
+ --> openldap-2.4.44-23.amzn2.0.2.x86_64 from amzn2-core removed (updateinfo)
+ --> libsmartcols-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> 7:device-mapper-libs-1.02.170-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-tools-2.06-2.amzn2.0.3.x86_64 from installed removed (updateinfo)
+ --> libcurl-7.76.1-4.amzn2.0.1.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-tools-extra-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> systemd-sysv-219-78.amzn2.0.14.x86_64 from installed removed (updateinfo)
+ --> glibc-minimal-langpack-2.26-48.amzn2.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-tools-minimal-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> util-linux-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> kernel-tools-4.14.246-187.474.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> libcurl-7.76.1-7.amzn2.0.2.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-tools-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> 1:grub2-2.06-2.amzn2.0.3.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-pc-2.06-2.amzn2.0.3.x86_64 from installed removed (updateinfo)
+ --> 7:lvm2-2.02.177-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-1.02.170-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> util-linux-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> systemd-219-78.amzn2.0.14.x86_64 from installed removed (updateinfo)
+ --> curl-7.76.1-7.amzn2.0.2.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-event-1.02.170-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> systemd-libs-219-78.amzn2.0.14.x86_64 from installed removed (updateinfo)
+ --> 7:lvm2-libs-2.02.187-6.amzn2.5.x86_64 from amzn2-core removed (updateinfo)
+ --> glibc-all-langpacks-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> libfdisk-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-1.02.146-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+ --> 7:lvm2-libs-2.02.177-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+ --> libblkid-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> libmount-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> 1:grub2-pc-modules-2.06-2.amzn2.0.6.noarch from amzn2-core removed (updateinfo)
+ --> 1:grub2-pc-2.06-2.amzn2.0.6.x86_64 from amzn2-core removed (updateinfo)
+ --> libuuid-2.30.2-2.amzn2.0.4.x86_64 from installed removed (updateinfo)
+ --> kernel-tools-4.14.243-185.433.amzn2.x86_64 from installed removed (updateinfo)
+ --> 7:device-mapper-event-libs-1.02.146-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+ --> libuuid-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> libsmartcols-2.30.2-2.amzn2.0.5.x86_64 from amzn2-core removed (updateinfo)
+ --> glibc-2.26-54.amzn2.x86_64 from amzn2-core removed (updateinfo)
+ --> 7:device-mapper-event-1.02.146-4.amzn2.0.2.x86_64 from installed removed (updateinfo)
+No packages needed for security; 34 packages available
+Resolving Dependencies
+Cloud-init v. 19.3-44.amzn2 running 'modules:final' at Tue, 21 Sep 2021 16:06:07 +0000. Up 16.46 seconds.
++ echo Starting
+Starting
++ dns_name=fs-9fb36f99.efs.us-west-2.amazonaws.com
++ dns_name=fs-9fb36f99.efs.us-west-2.amazonaws.com
++ echo fs-9fb36f99.efs.us-west-2.amazonaws.com
+fs-9fb36f99.efs.us-west-2.amazonaws.com
++ yum install -y amazon-efs-utils
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Existing lock /var/run/yum.pid: another copy is running as pid 2351.
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  91 M RSS (308 MB VSZ)
+    Started: Tue Sep 21 16:05:59 2021 - 00:08 ago
+    State  : Running, pid: 2351
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory : 151 M RSS (369 MB VSZ)
+    Started: Tue Sep 21 16:05:59 2021 - 00:10 ago
+    State  : Running, pid: 2351
+Resolving Dependencies
+--> Running transaction check
+---> Package amazon-efs-utils.noarch 0:1.31.2-1.amzn2 will be installed
+--> Processing Dependency: stunnel >= 4.56 for package: amazon-efs-utils-1.31.2-1.amzn2.noarch
+--> Running transaction check
+---> Package stunnel.x86_64 0:4.56-6.amzn2.0.3 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch        Version                Repository       Size
+================================================================================
+Installing:
+ amazon-efs-utils      noarch      1.31.2-1.amzn2         amzn2-core       46 k
+Installing for dependencies:
+ stunnel               x86_64      4.56-6.amzn2.0.3       amzn2-core      149 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 195 k
+Installed size: 479 k
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.5 MB/s | 195 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : stunnel-4.56-6.amzn2.0.3.x86_64                              1/2 
+  Installing : amazon-efs-utils-1.31.2-1.amzn2.noarch                       2/2 
+  Verifying  : stunnel-4.56-6.amzn2.0.3.x86_64                              1/2 
+  Verifying  : amazon-efs-utils-1.31.2-1.amzn2.noarch                       2/2 
+
+Installed:
+  amazon-efs-utils.noarch 0:1.31.2-1.amzn2                                      
+
+Dependency Installed:
+  stunnel.x86_64 0:4.56-6.amzn2.0.3                                             
+
+Complete!
++ python3 --version
+Python 3.7.10
++ pip3 --version
+pip 20.2.2 from /usr/lib/python3.7/site-packages/pip (python 3.7)
++ wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py
+--2021-09-21 16:06:14--  https://bootstrap.pypa.io/get-pip.py
+Resolving bootstrap.pypa.io (bootstrap.pypa.io)... 151.101.52.175, 2a04:4e42:d::175
+Connecting to bootstrap.pypa.io (bootstrap.pypa.io)|151.101.52.175|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1957374 (1.9M) [text/x-python]
+Saving to: '/tmp/get-pip.py'
+
+     0K .......... .......... .......... .......... ..........  2% 12.6M 0s
+    50K .......... .......... .......... .......... ..........  5% 5.31M 0s
+   100K .......... .......... .......... .......... ..........  7% 10.3M 0s
+   150K .......... .......... .......... .......... .......... 10% 9.68M 0s
+   200K .......... .......... .......... .......... .......... 13% 68.1M 0s
+   250K .......... .......... .......... .......... .......... 15% 10.5M 0s
+   300K .......... .......... .......... .......... .......... 18%  308M 0s
+   350K .......... .......... .......... .......... .......... 20% 9.67M 0s
+   400K .......... .......... .......... .......... .......... 23%  229M 0s
+   450K .......... .......... .......... .......... .......... 26%  201M 0s
+   500K .......... .......... .......... .......... .......... 28% 9.94M 0s
+   550K .......... .......... .......... .......... .......... 31%  282M 0s
+   600K .......... .......... .......... .......... .......... 34%  228M 0s
+   650K .......... .......... .......... .......... .......... 36%  291M 0s
+   700K .......... .......... .......... .......... .......... 39%  136M 0s
+   750K .......... .......... .......... .......... .......... 41% 9.92M 0s
+   800K .......... .......... .......... .......... .......... 44%  264M 0s
+   850K .......... .......... .......... .......... .......... 47%  277M 0s
+   900K .......... .......... .......... .......... .......... 49%  239M 0s
+   950K .......... .......... .......... .......... .......... 52%  311M 0s
+  1000K .......... .......... .......... .......... .......... 54% 9.94M 0s
+  1050K .......... .......... .......... .......... .......... 57%  234M 0s
+  1100K .......... .......... .......... .......... .......... 60%  231M 0s
+  1150K .......... .......... .......... .......... .......... 62%  271M 0s
+  1200K .......... .......... .......... .......... .......... 65%  248M 0s
+  1250K .......... .......... .......... .......... .......... 68%  288M 0s
+  1300K .......... .......... .......... .......... .......... 70%  242M 0s
+  1350K .......... .......... .......... .......... .......... 73%  269M 0s
+  1400K .......... .......... .......... .......... .......... 75%  284M 0s
+  1450K .......... .......... .......... .......... .......... 78%  292M 0s
+  1500K .......... .......... .......... .......... .......... 81%  251M 0s
+  1550K .......... .......... .......... .......... .......... 83%  289M 0s
+  1600K .......... .......... .......... .......... .......... 86%  280M 0s
+  1650K .......... .......... .......... .......... .......... 88% 83.7M 0s
+  1700K .......... .......... .......... .......... .......... 91% 10.3M 0s
+  1750K .......... .......... .......... .......... .......... 94%  287M 0s
+  1800K .......... .......... .......... .......... .......... 96%  275M 0s
+  1850K .......... .......... .......... .......... .......... 99%  292M 0s
+  1900K .......... .                                          100%  244M=0.06s
+
+2021-09-21 16:06:14 (32.0 MB/s) - '/tmp/get-pip.py' saved [1957374/1957374]
+
++ python3 /tmp/get-pip.py
+Collecting pip
+  Downloading pip-21.2.4-py3-none-any.whl (1.6 MB)
+Collecting wheel
+  Downloading wheel-0.37.0-py2.py3-none-any.whl (35 kB)
+Installing collected packages: wheel, pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.2.2
+    Uninstalling pip-20.2.2:
+      Successfully uninstalled pip-20.2.2
+Successfully installed pip-21.2.4 wheel-0.37.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ /usr/local/bin/pip3 install botocore
+Collecting botocore
+  Downloading botocore-1.21.44-py3-none-any.whl (7.9 MB)
+Collecting urllib3<1.27,>=1.25.4
+  Downloading urllib3-1.26.6-py2.py3-none-any.whl (138 kB)
+Collecting jmespath<1.0.0,>=0.7.1
+  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting python-dateutil<3.0.0,>=2.1
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, urllib3, python-dateutil, jmespath, botocore
+Successfully installed botocore-1.21.44 jmespath-0.10.0 python-dateutil-2.8.2 six-1.16.0 urllib3-1.26.6
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ mkdir -p /mnt/efs
++ mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-9fb36f99.efs.us-west-2.amazonaws.com
+mount: fs-9fb36f99.efs.us-west-2.amazonaws.com: can't find in /etc/fstab.
++ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-9fb36f99.efs.us-west-2.amazonaws.com:/ /mnt/efs
+mount.nfs4: Failed to resolve server fs-9fb36f99.efs.us-west-2.amazonaws.com: Name or service not known
+mount.nfs4: Operation already in progress
++ date
+++ date +%s
++ sync
++ sync
+Cloud-init v. 19.3-44.amzn2 finished at Tue, 21 Sep 2021 16:06:23 +0000. Datasource DataSourceEc2.  Up 32.42 seconds
